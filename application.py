@@ -6,8 +6,8 @@ application = Flask(__name__)
 app = application
 
 # Load model and scaler
-ridge_model = pickle.load(open("Models/ridge.pkl", "rb"))
-standard_scaler = pickle.load(open("Models/scaler.pkl", "rb"))
+ridge_model = pickle.load(open("models/ridge1.pkl", "rb"))
+standard_scaler = pickle.load(open("models/scaler1.pkl", "rb"))
 
 @app.route('/')
 def index():
